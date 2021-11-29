@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+    <!-- Bulma CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    {%- if title %}
+    <title>CPS530 Project - {{ title }}</title>
+    {% else %}
+    <title>CPS530 Project</title>
+    {%- endif %}
+</head>
+<body>
+    {%- block body %}{% endblock -%}
+</body>
+</html>
