@@ -15,4 +15,41 @@
             </div>
         </div>
     </section>
+    <section class="section py-6">
+        <div class="columns is-variable is-8 is-vcentered">
+            <div class="column is-three-fifths content has-text-centered-mobile">
+                <h2 class="is-size-2 is-size-3-mobile secondary-heading">About Us</h2>
+                <p class="is-size-5 is-size-6-mobile">Our mission is to create as many vegan-friendly options of traditional baked goods and desserts to cater towards a diverse group of customers each with their own health preferences. To fit each customer's needs, we list each <a href="#">recipe's ingredients</a> on our menu.</p>
+                <p class="is-size-5 is-size-6-mobile">Many of our restaurant staff come from different levels of experience but Sugar On Top aims to teach young bakers to challenge the ideas of traditional baking.</p>
+            </div>
+            <div class="column">
+                <div class="tile is-ancestor images-collage">
+                    <div class="tile is-6 is-vertical is-parent">
+                        <div class="tile is-child">
+                            <figure class="image collage-image">
+                                <img src="{{ url_for('static', filename='images/brownies.jpg') }}">
+                            </figure>
+                        </div>
+                        <div class="tile is-child">
+                            <figure class="image collage-image">
+                                <img src="{{ url_for('static', filename='images/cupcake.jpg') }}">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="tile is-vertical is-parent">
+                        <div class="tile is-child">
+                            <figure class="image collage-image">
+                                <img src="{{ url_for('static', filename='images/cake.jpg') }}">
+                            </figure>
+                        </div>
+                        <div class="tile is-child">
+                            <figure class="image collage-image">
+                                <img src="{{ url_for('static', filename='images/donuts.jpg') }}">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock content %}

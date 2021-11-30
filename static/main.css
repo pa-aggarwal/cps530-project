@@ -12,6 +12,16 @@
     background-size: 100%;
 }
 
+.secondary-heading {
+    display: inline-block;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid #485fc7;
+}
+
+.collage-image {
+    width: 100%;
+}
+
 @media screen and (max-width: 700px) {
 
     .center-content {
