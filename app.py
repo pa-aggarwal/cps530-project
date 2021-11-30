@@ -10,3 +10,7 @@ def index():
 @app.route("/demo")
 def demo():
     return render_template("demo.html", title="Demo")
+
+@app.route("/tutorial")
+def tutorial():
+    return render_template("tutorial.html", title="Tutorial")

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <section class="hero is-medium demo-hero-bg">
+    <section class="hero is-medium demo-hero-bg" id="home">
         <div class="hero-body has-text-centered center-content">
             <h1 class="title is-spaced has-text-link has-text-weight-bold is-size-1">Sugar On Top</h1>
             <p class="subtitle has-text-white">We are a vegan sweets bakery located in Toronto that sell donuts, cupcakes, cakes, and many other delicious treats to our customers.</p>
@@ -15,7 +15,7 @@
             </div>
         </div>
     </section>
-    <section class="section py-6">
+    <section class="section py-6" id="about">
         <div class="columns is-variable is-8 is-vcentered">
             <div class="column is-three-fifths content has-text-centered-mobile">
                 <h2 class="is-size-2 is-size-3-mobile secondary-heading">About Us</h2>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </section>
-    <section class="section py-6 has-background-link-light">
+    <section class="section py-6 has-background-link-light" id="features">
         <div class="columns center-cards">
             <div class="column card is-flex is-flex-direction-column is-justify-content-center has-text-centered p-5">
                 <i class="fas fa-leaf is-size-4 mb-4 has-text-link"></i>
@@ -76,4 +76,14 @@
             </div>
         </div>
     </section>
+    <footer class="has-background-link py-6">
+        <div class="content has-text-centered">
+            <p class="has-text-white mb-4"><strong class="has-text-white">Sugar On Top</strong> by Priya Aggarwal &copy; 2021</p>
+            <div class="columns is-variable is-2-mobile is-centered">
+                <a class="column is-narrow has-text-white py-1" href="#home">Home</a>
+                <a class="column is-narrow has-text-white py-1" href="#about">About</a>
+                <a class="column is-narrow has-text-white py-1" href="#features">Features</a>
+            </div>
+        </div>
+    </footer>
 {% endblock content %}

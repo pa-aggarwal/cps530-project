@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class="section">
+        <h1 class="is-size-1">Tutorial</h1>
+    </section>
+    <section class="section content py-3" id="flask-routes">
+        <h2>Building Routes with Flask</h2>
+        <p>After following the instructions from the <a href="#">Install</a> page about Flask, we can now create routes to different pages in our application. To begin doing this, make a file called <span>app.py</span> and insert the following code:</p>
+<pre><code>from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "&lt;h1&gt;Hello World!&lt;/h1&gt;"</code></pre>
+        <p>After creating this file, run the following commands in a Terminal window like Git Bash.</p>
+<pre><code>$ export FLASK_APP=app
+$ export FLASK_ENV=development
+$ flask run</code></pre>
+        <p>After running the last command, Flask should have displayed a message showing a localhost address (127.0.0.1) and the port number to see your page in the browser. Open Chrome and enter this address to see your "Hello World!" page.</p>
+    </section>
+    <section class="section content py-3" id="flask-templates">
+        <h2>Flask Templates</h2>
+        <p>To render bigger chunks of HTML, we should create templates for each page on the website. To render a template in Flask, follow these steps:</p>
+        <ol>
+            <li>Create a <span>templates</span> directory in the same folder as your <span>app.py</span> file.</li>
+            <li>Add a file called <span>base.html</span> to the <span>templates</span> directory.</li>
+            <li>Modify <span>app.py</span> to add Flask's <code>render_template()</code> function and add this HTML to the <span>base.html</span> file.</li>
+        </ol>
+<pre><code># app.py
+from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return render_template("base.html")</code></pre>
+<pre><code>&lt;!-- base.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+{% endblock content %}
