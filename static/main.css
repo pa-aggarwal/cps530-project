@@ -1,7 +1,7 @@
 
 .center-content {
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .demo-hero-bg {
@@ -10,6 +10,7 @@
         url("images/demo-cover.jpg");
     background-position: center 20%;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .secondary-heading {

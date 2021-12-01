@@ -2,11 +2,11 @@
 {% block content %}
     <section class="section content pt-6 pb-4">
         <h1 class="is-size-1">Tutorial</h1>
-        <p>This tutorial provides a brief overview of the concepts from the backend Flask framework and the frontend Bulma CSS framework which were both used to build the <a href="{{ url_for('demo') }}">Demo</a> page. Links to the corresponding documentation are also listed to give a more in-depth explanation.</p>
+        <p class="is-size-5">This tutorial provides a brief overview of the concepts from the backend Flask framework and the frontend Bulma CSS framework which were both used to build the <a href="{{ url_for('demo') }}">Demo</a> page. Links to the corresponding documentation are also listed to give a more in-depth explanation.</p>
     </section>
     <section class="section content py-3" id="building-routes-with-flask">
         <h2 class="has-text-primary-dark">Building Routes with Flask</h2>
-        <p>After following the instructions from the <a href="#">Install</a> page about Flask, we can now create routes to different pages in our application. To begin doing this, make a file called <span>app.py</span> and insert the following code:</p>
+        <p>After following the instructions from the <a href="{{ url_for('install') }}">Install</a> page about Flask, we can now create routes to different pages in our application. To begin doing this, make a file called <span class="is-family-code">app.py</span> in your project folder and insert the following code:</p>
 <pre><code>from flask import Flask
 app = Flask(__name__)
 
@@ -23,9 +23,9 @@ $ flask run</code></pre>
         <h2 class="has-text-primary-dark">Flask Templates</h2>
         <p>To render bigger chunks of HTML, we should create templates for each page on the website. To render a template in Flask, follow these steps:</p>
         <ol>
-            <li>Create a <span>templates</span> directory in the same folder as your <span>app.py</span> file.</li>
-            <li>Add a file called <span>base.html</span> to the <span>templates</span> directory.</li>
-            <li>Modify <span>app.py</span> to add Flask's <code>render_template()</code> function and add this HTML to the <span>base.html</span> file.</li>
+            <li>Create a <span class="is-family-code">templates</span> directory in the same folder as your <span class="is-family-code">app.py</span> file.</li>
+            <li>Add a file called <span class="is-family-code">base.html</span> to the <span>templates</span> directory.</li>
+            <li>Modify <span class="is-family-code">app.py</span> to add Flask's <code>render_template()</code> function and add this HTML to the <span class="is-family-code">base.html</span> file.</li>
         </ol>
 <pre><code># app.py
 from flask import Flask, render_template
@@ -50,10 +50,10 @@ def index():
         <h2 class="has-text-primary-dark">Using Bulma's Class Styles</h2>
         <p>After attaching Bulma's CDN to our template files (mentioned in <a href="#">Install</a> page), we can use Bulma's provided <a href="https://bulma.io/documentation/" target="_blank">documentation</a> about CSS classes to style HTML elements like headings <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, images, sections, buttons, links, and others. Here are a few examples of how to style text, images, and apply colour styles.</p>
         <h3>Styling Text</h3>
-        <p>Bulma provides many <a href="https://bulma.io/documentation/helpers/typography-helpers/" target="_blank">typography</a> classes which can be used to change the font properties and alignment of textual elements such as headings, paragraphs, and others. For example to create a bold and centered <code>&lt;h1&gt;</code>, we can use this code inside our <span>base.html</span> file:</p>
+        <p>Bulma provides many <a href="https://bulma.io/documentation/helpers/typography-helpers/" target="_blank">typography</a> classes which can be used to change the font properties and alignment of textual elements such as headings, paragraphs, and others. For example to create a bold and centered <code>&lt;h1&gt;</code>, we can use this code inside our <span class="is-family-code">base.html</span> file:</p>
 <pre><code>&lt;h1 class="is-size-1 has-text-centered has-text-weight-bold"&gt;Hello World&lt;/h1&gt;</code></pre>
         <h3>Styling Images</h3>
-        <p>Bulma's documentation about <a href="https://bulma.io/documentation/elements/image/" target="_blank">images</a> shows ways to display images responsively with fixed sizes. For example, to create a rounded <code>128x128</code> image, we can use the following code inside our <span>base.html</span> file.</p>
+        <p>Bulma's documentation about <a href="https://bulma.io/documentation/elements/image/" target="_blank">images</a> shows ways to display images responsively with fixed sizes. For example, to create a rounded <code>128x128</code> image, we can use the following code inside our <span class="is-family-code">base.html</span> file.</p>
 <pre><code>&lt;figure class="image is-128x128"&gt;
     &lt;img class="is-rounded" src="my-image.jpg"&gt;
 &lt;/figure&gt;</code></pre>

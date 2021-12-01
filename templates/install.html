@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class="section content">
+        <h1 class="is-size-1">Install</h1>
+        <p class="is-size-5">This page shows the requirements and steps of how to install Flask and get started with Bulma.</p>
+        <h2 class="has-text-primary-dark">Flask</h2>
+        <ol>
+            <li>You must <a href="https://www.python.org/downloads/" target="_blank">download Python</a> on your computer to run Flask.
+                <ul>
+                    <li>If you have Python, it must be version 3.6+ for Flask to work correctly</li>
+                    <li>Otherwise, get the newest release version for your specific OS</li>
+                    <li>To check your version of Python, open a Terminal or Command Prompt and run <code>python --version</code></li>
+                </ul>
+            </li>
+            <li>Follow the steps provided in Flask's <a href="https://flask.palletsprojects.com/en/2.0.x/installation/#create-an-environment" target="_blank">installation</a> page.</li>
+        </ol>
+        <h2 class="has-text-primary-dark">Bulma</h2>
+        <ol>
+            <li>Open Bulma's <a href="https://bulma.io/documentation/overview/start/" target="_blank">Getting Started</a> page and scroll down to the CDN option.</li>
+            <li>Copy and paste the HTML <code>&lt;link&gt;</code> into the <code>&lt;head&gt;</code> section of any HTML file to use Bulma's style classes.</li>
+        </ol>
+    </section>
+{% endblock content %}
