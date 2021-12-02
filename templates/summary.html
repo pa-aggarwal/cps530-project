@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class="section content">
+        <h1 class="is-size-2">Summary of Frameworks</h1>
+        <h2 class="is-size-3">Flask</h2>
+        <p class="is-size-5-desktop">Flask is popular among Python developers as it was voted the most popular web framework in the 2018 Python Developers Survey. Flask is often compared against another commonly-used web full-stack framework called Django. In October 2020, Flask was the runner-up to Django for the most stars on GitHub for a web-development framework written in Python.</p>
+        <div class="container has-text-centered py-5">
+            <h3 class="is-size-4 mb-5 has-text-primary-dark">Used by these major companies</h3>
+            <div class="columns is-justify-content-center is-flex-wrap-wrap">
+                <div class="column is-narrow">
+                    <figure class="image is-128x128 is-flex is-align-items-center mx-auto">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png">
+                    </figure>
+                </div>
+                <div class="column is-narrow">
+                    <figure class="image is-128x128 mx-auto">
+                        <img src="https://i.pinimg.com/originals/e8/66/33/e86633c6d15897cafddb3295d4b6167d.png">
+                    </figure>
+                </div>
+                <div class="column is-narrow">
+                    <figure class="image is-128x128 mx-auto">
+                        <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c531.png">
+                    </figure>
+                </div>
+                <div class="column is-narrow">
+                    <figure class="image is-128x128 mx-auto">
+                        <img src="https://logoeps.com/wp-content/uploads/2012/12/mozilla-firefox-vector-logo.png">
+                    </figure>
+                </div>
+                <div class="column is-narrow">
+                    <figure class="image is-128x128 mx-auto">
+                        <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c513.png">
+                    </figure>
+                </div>
+                <div class="column is-narrow">
+                    <figure class="image is-128x128 is-flex is-align-items-center mx-auto">
+                        <img src="https://download.logo.wine/logo/Lyft/Lyft-Logo.wine.png">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="container py-6">
+            <div class="columns is-centered">
+                <div class="column is-narrow">
+                    <h3 class="is-size-4 is-uppercase">Strengths</h3>
+                    <ul class="fa-ul has-text-left icon-list is-size-5-widescreen">
+                        <li><span class="fa-li has-text-success"><i class="fas fa-plus"></i></span>Lightweight and easy for beginners</li>
+                        <li><span class="fa-li has-text-success"><i class="fas fa-plus"></i></span>Functionality can be easily added if requirements change</li>
+                        <li><span class="fa-li has-text-success"><i class="fas fa-plus"></i></span>Large community and accessible documentation</li>                        
+                    </ul>
+                </div>
+                <div class="column is-narrow">
+                    <h3 class="is-size-4 is-uppercase">Weaknesses</h3>
+                    <ul class="fa-ul has-text-left icon-list is-size-5-widescreen">
+                        <li><span class="fa-li has-text-danger"><i class="fas fa-minus"></i></span>Poor performance for high website traffic (Flask is single-threaded)</li>
+                        <li><span class="fa-li has-text-danger"><i class="fas fa-minus"></i></span>Administration features are not as prominent</li>
+                        <li><span class="fa-li has-text-danger"><i class="fas fa-minus"></i></span>More complicated maintenance for complex websites</li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

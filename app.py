@@ -18,3 +18,7 @@ def tutorial():
 @app.route("/install")
 def install():
     return render_template("install.html", title="Install")
+
+@app.route("/summary")
+def summary():
+    return render_template("summary.html", title="Summary")

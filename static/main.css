@@ -1,9 +1,4 @@
 
-.center-content {
-    margin: 0 auto;
-    max-width: 70%;
-}
-
 .demo-hero-bg {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
@@ -28,11 +23,12 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
+/* Remove bullets applied by Bulma on lists */
+.content .icon-list {
+    list-style: none;
+}
 
-    .center-content {
-        max-width: 100%;
-    }
+@media screen and (max-width: 768px) {
 
     .center-cards > .column:not(:last-child) {
         margin-bottom: 1.5rem;
