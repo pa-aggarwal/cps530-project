@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class="section content">
+        <div class="container is-max-desktop">
+            <h1 class="is-size-1">Conclusion</h1>
+            <ol>
+                <li class="mb-2">Rate your experience with the frameworks that you chose.
+                    <p class="mt-2">My experience with using both Flask and Bulma was good, and I would give Flask a rating of 5/5 and Bulma a rating of 4/5.</p>
+                </li>
+                <li class="mb-2">Did they perform to your expectations?
+                    <p class="mt-2">Yes both frameworks performed to my expectations since I have created a website using Django in the past, and I found working with Flask to be more simple. I also expected Bulma to be similar to Bootstrap since many classes are provided to add CSS styles.</p>
+                </li>
+                <li class="mb-2">Were they difficult to install or configure?
+                    <p class="mt-2">No, both frameworks had clear documentation and instructions about how to install or get started with them.</p>
+                </li>
+                <li class="mb-2">Was it easy to create the page(s) with it?
+                    <p class="mt-2">Using Flask was easy since it involved creating routes to different pages of the website and making templates for each page. Although Bulma provides a lot of classes to style elements on pages, one thing I found difficult was overriding some properties of the classes because of how CSS specificity works. I also had to add some custom styles in a separate stylesheet if Bulma did not provide a class for the style I wanted. For example, on the demo page, I had to create a class to add the background image in the hero section at the top.</p>
+                </li>
+                <li class="mb-2">Was the learning curve steep compared with regular HTML/CSS/JavaScript/PHP?
+                    <p class="mt-2">The learning curve was not steep compared to regular HTML/CSS/JavaScript/PHP. This is because I think already knowing how to use these languages makes it easier to apply the same skills to other frameworks.</p>
+                </li>
+                <li class="mb-2">Would you have done things differently in retrospect?
+                    <p class="mt-2">I think I could've used SASS which is a CSS preprocessor that would've helped me customize Bulma's classes much more easily. Customization would've been easier since SASS has variables that can be modified. Also importing their mixins into a single custom class may have helped the generated HTML for each page look less class-bloated.</p>
+                </li>
+                <li class="mb-2">Did you regret your choice of frameworks?
+                    <p class="mt-2">No, I don't regret my choice of frameworks because Flask and Bulma provided simplicity and this project did not require the complex features offered by other frameworks like Django, NodeJS, and React.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+{% endblock content %}

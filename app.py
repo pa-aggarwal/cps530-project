@@ -22,3 +22,11 @@ def install():
 @app.route("/summary")
 def summary():
     return render_template("summary.html", title="Summary")
+
+@app.route("/conclusion")
+def conclusion():
+    return render_template("conclusion.html", title="Conclusion")
+
+@app.route("/credits")
+def credits():
+    return render_template("credits.html", title="Credits")

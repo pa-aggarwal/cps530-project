@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class="section content">
+        <div class="container is-max-desktop">
+            <h1 class="is-size-1">Credits</h1>
+            <p>This website was created by me, Priya Aggarwal, with no other group members. The following links refer to all references I used to help me build the website.</p>
+            <ul>
+                <li><a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank">Flask Documentation</a> - Used for learning how to install Flask, implement page routes, templates, and template inheritance.</li>
+                <li><a href="https://bulma.io/documentation/" target="_blank">Bulma Documentation</a> - Used for learning how to use Bulma, what styles each class applies to different HTML elements.</li>
+                <li><a href="https://fontawesome.com/v5.15/how-to-use/on-the-web/referencing-icons/basic-use" target="_blank">Font Awesome Documentation</a> - Used for adding icons to the <a href="{{ url_for('demo') }}">Demo</a> and <a href="{{ url_for('summary') }}">Summary</a> pages.</li>
+                <li><a href="https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH" target="_blank">Corey Schafer's Flask Tutorials</a> - Used the first two videos in the playlist to learn about how to get started with Flask, and make routes and templates.</li>
+                <li><a href="https://en.wikipedia.org/wiki/Flask_(web_framework)#" target="_blank">Flask Wikipedia Page</a> - Used information about Flask's popularity on the Summary page.</li>
+                <li><a href="https://hackr.io/blog/flask-vs-django" target="_blank">Flask vs. Django Comparison</a> - Used information from the table comparing Flask's features against Django's features.</li>
+                <li><a href="https://www.educative.io/courses/flask-develop-web-applications-in-python/RLY4J4OlryV" target="_blank">Companies Using Flask</a> - Used to show logos of the companies using Flask on the Summary page.</li>
+                <li><a href="https://athemes.com/collections/best-css-frameworks/" target="_blank">CSS Frameworks Article</a> - Used to get the strengths, weaknesses, and popularity of Bulma on the Summary page.</li>
+                <li><a href="https://stackshare.io/bulma" target="_blank">Companies Using Bulma</a> - Used to show logos of the companies using Bulma on the Summary page.</li>
+            </ul>
+        </div>
+    </section>
+{% endblock content %}
